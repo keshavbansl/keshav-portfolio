@@ -70,3 +70,15 @@ window.onscroll = () => {
     }
   });
 };
+
+
+function scrollProjects(direction) {
+  const container = document.getElementById("projectsSlider");
+
+  const scrollAmount = 350; // card width + gap
+
+  container.scrollBy({
+    left: direction * scrollAmount,
+    behavior: "smooth"
+  });
+}

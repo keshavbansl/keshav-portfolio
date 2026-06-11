@@ -183,35 +183,131 @@
 
 <section id="projects" class="section">
 
-<h2>Projects</h2>
+  <h2>Projects</h2>
 
-<div class="terminal">
+  <div class="projects-wrapper">
 
-<pre>
-root@keshav:~$ ./scanner
+    <button class="nav-btn" onclick="scrollProjects(-1)">&#10094;</button>
 
-Web Vulnerability Scanner
-Tools: Python, Nmap
-Status: Completed
-</pre>
+    <div class="projects-slider" id="projectsSlider">
 
-<a href="https://github.com/" target="_blank">GitHub</a>
+      <!-- 1. Ransomware Detector -->
+      <div class="project-card">
 
-</div>
+        <div class="project-top">
+          <h3>Ransomware Detector</h3>
+          <a href="https://github.com/keshavbansl/Ransomware-ML-DL-Detection-Model" target="_blank">
+            GitHub ↗
+          </a>
+        </div>
 
-<div class="terminal">
+        <p class="project-desc">
+          Hybrid ML–DL ensemble system designed to detect and classify 26 ransomware families using static and dynamic features.
+        </p>
 
-<pre>
-root@keshav:~$ ./portscan
+        <div class="project-tags">
+          <span>Machine Learning</span>
+          <span>Deep Learning</span>
+          <span>Cybersecurity</span>
+        </div>
 
-Advanced Port Scanner
-Tools: Python, Sockets
-Status: Completed
-</pre>
+        <ul class="project-list">
+          <li>Detects 26 ransomware families</li>
+          <li>Uses model stacking ensemble approach</li>
+          <li>Achieved ~97% accuracy</li>
+        </ul>
 
-<a href="https://github.com/" target="_blank">GitHub</a>
+      </div>
 
-</div>
+      <!-- 2. PhishGuard -->
+      <div class="project-card">
+
+        <div class="project-top">
+          <h3>PhishGuard – AI Phishing Detection</h3>
+          <a href="https://github.com/keshavbansl/Phishgaurd" target="_blank">
+            GitHub ↗
+          </a>
+        </div>
+
+        <p class="project-desc">
+          AI-powered phishing detection system using NLP techniques and hybrid machine learning models.
+        </p>
+
+        <div class="project-tags">
+          <span>Natural Language Processing</span>
+          <span>Machine Learning</span>
+          <span>Cybersecurity</span>
+        </div>
+
+        <ul class="project-list">
+          <li>TF-IDF + Logistic Regression, Naive Bayes, Random Forest</li>
+          <li>SBERT contextual embeddings</li>
+          <li>GPT-2 synthetic phishing data generation</li>
+        </ul>
+
+      </div>
+
+      <!-- 3. AI Attendance -->
+      <div class="project-card">
+
+        <div class="project-top">
+          <h3>AI-Based Attendance System</h3>
+          <a href="https://github.com/keshavbansl/AI-Based-attendance-System" target="_blank">
+            GitHub ↗
+          </a>
+        </div>
+
+        <p class="project-desc">
+          Real-time facial recognition attendance system using computer vision and machine learning.
+        </p>
+
+        <div class="project-tags">
+          <span>Computer Vision</span>
+          <span>OpenCV</span>
+          <span>Machine Learning</span>
+        </div>
+
+        <ul class="project-list">
+          <li>Face recognition using OpenCV</li>
+          <li>Automated training & registration pipeline</li>
+          <li>Real-time attendance marking</li>
+        </ul>
+
+      </div>
+
+      <!-- 4. IDS DNS -->
+      <div class="project-card">
+
+        <div class="project-top">
+          <h3>Intrusion Detection System (DNS)</h3>
+          <a href="https://github.com/keshavbansl/Intrusion-Detection-System-DNS" target="_blank">
+            GitHub ↗
+          </a>
+        </div>
+
+        <p class="project-desc">
+          Machine learning-based intrusion detection system for detecting malicious DNS traffic in real time.
+        </p>
+
+        <div class="project-tags">
+          <span>Network Security</span>
+          <span>Machine Learning</span>
+          <span>Cybersecurity</span>
+        </div>
+
+        <ul class="project-list">
+          <li>TF-IDF + Regex feature extraction</li>
+          <li>Real-time detection pipeline</li>
+          <li>Latency tracking & evaluation metrics</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <button class="nav-btn" onclick="scrollProjects(1)">&#10095;</button>
+
+  </div>
 
 </section>
 
@@ -349,61 +445,49 @@ Status: Completed
   <h1 class="contact-title">Get in Touch</h1>
 
   <p class="contact-sub">
-    Have a project in mind or just want to say hello? I'd love to hear from you
+    Feel free to reach out for collaboration, projects, or cybersecurity discussions.
   </p>
 
-  <div class="contact-grid">
+  <div class="contact-center">
 
-    <div class="contact-left">
+    <!-- EMAIL BOX -->
+    <div class="contact-card">
 
-      <h3>Let's work together</h3>
+      <h3>Emails</h3>
 
-      <p>
-        I'm always open to discussing new projects,
-        creative ideas, or opportunities to be part
-        of your vision.
-      </p>
-
-      <div class="contact-box">
-        <i class="fa-solid fa-envelope"></i>
-        <div>
-          <p>Email</p>
-          <p id="email-text">keshavbansal1979@gmail.com
-            kbansal4_be23@thapar.edu
-          </p>
-        </div>
-      </div>
-
-      <div class="contact-box">
-        <i class="fa-solid fa-location-dot"></i>
-        <div>
-          <p>Location</p>
-          <p>Patiala, Punjab, India</p>
-        </div>
-      </div>
-
-      <!-- NEW SOCIAL LINKS -->
-      <div class="social-extra">
-        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      <div class="email-list">
+        <p>keshavbansal1979@gmail.com</p>
+        <p>kbansal4_be23@thapar.edu</p>
       </div>
 
     </div>
 
-    <!-- FORM -->
+    <!-- SOCIAL LINKS -->
+    <div class="contact-card">
 
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <input type="text" placeholder="Subject">
-      <textarea placeholder="Tell me about project or subject..."></textarea>
-      <button class="send-btn">
-        <i class="fa-solid fa-paper-plane"></i>
-        Send Message
-      </button>
-    </form>
+      <h3>Connect With Me</h3>
+
+      <div class="social-buttons">
+
+        <a href="https://github.com/keshavbansl" target="_blank">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/in/keshav-bansl" target="_blank">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+
+        <a href="https://www.instagram.com/keshav.bansl/" target="_blank">
+          <i class="fa-brands fa-instagram"></i> Instagram
+        </a>
+
+        <a href="https://twitter.com/" target="_blank">
+          <i class="fa-brands fa-x-twitter"></i> X (Twitter)
+        </a>
+
+      </div>
+
+    </div>
 
   </div>
 
